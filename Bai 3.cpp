@@ -1,11 +1,21 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-	int n;
-    printf("Nhap n: ");
-    scanf("%d", &n);
-  	for(int i = 1; i <= n; i++){
-    	if(n % i == 0){
-      	printf("%3d",i);
+int x,y,a,b;
+do{
+	printf("Nhap a= ");
+	scanf("%d",&a);
+	printf("Nhap b= ");
+	scanf("%d",&b);
+}while (a<=0|| b<=0);
+	x=a;
+	y=b;
+	while(a!=b){
+		if(a>b)
+		a-=b;
+		else
+		b-=a;
 		}
-	}
+			printf("Uoc chung lon nhat la %d",a);
+			printf("\nBoi chung nho nhat la %d",(x*y)/a);
+
 }

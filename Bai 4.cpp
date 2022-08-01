@@ -1,12 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-	int n;
-	printf("Nhap n=");
-	scanf("%d",&n);
-	int x = 0;
-	while(n != 0){
-		x = x*10 + n%10;
-		n = n/10;
-	}
-	printf("So nghich dao la: %d",x);
+    int n;
+    int x;
+    int s = 0;
+    printf("Nhap n= ");
+    scanf("%d",&n);
+    for(;n!=0;){
+        x = n % 10;
+        s += x;
+        n /= 10;
+    }    
+    printf("Tong cac chu so la: %d",s);
 }
