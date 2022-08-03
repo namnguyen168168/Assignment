@@ -8,12 +8,15 @@ int main(){
 	for(int i=0;i<n;i++){
 		scanf("%d",&arr[i]);
 	}
-	int i,min;
-	for(i=0; i<n; i++){
-		if(arr[i]>0){
-			min = arr[i];
-			break;
+	int avg,x=0;
+	int y=0;
+	for( int i=0 ; i<n ; i++ ){
+		if(arr[i]%2==1){
+			x=x+arr[i];
+			y++;
 		}
 	}
-	printf("So nguyen duong nho nhat: %d",min);
+	avg=int(x/y);
+	printf("Trung binh cong cac so le trong mang= %d",avg);
 }
+

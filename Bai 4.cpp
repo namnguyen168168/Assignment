@@ -1,14 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 int main(){
-    int n;
-    int x;
-    int s = 0;
-    printf("Nhap n= ");
-    scanf("%d",&n);
-    for(;n!=0;){
-        x = n % 10;
-        s += x;
-        n /= 10;
-    }    
-    printf("Tong cac chu so la: %d",s);
+	int n;
+	printf("Nhap n=");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Nhap n so:\n");
+	for(int i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+	for(int i=n-1 ; i<n ; i-- ){
+		if( arr[i]%2!=0){
+		printf("\nSo le cuoi cung trong mang la: %d",arr[i]);          
+        break;
+        }
+	}
 }
